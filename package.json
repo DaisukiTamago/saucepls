@@ -1,0 +1,8 @@
+{
+  "name": "saucepls",
+  "version": "1.0.0",
+  "description": "browser extension that will help you a lot",
+  "main": "index.js",
+  "author": "DaisukiTamago",
+  "license": "MIT"
+}
