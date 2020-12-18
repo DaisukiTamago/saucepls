@@ -1,8 +1,22 @@
 {
   "name": "saucepls",
   "version": "1.0.0",
-  "description": "browser extension that will help you a lot",
+  "description": "browser extension that will help you a lot :)",
   "main": "index.js",
   "author": "DaisukiTamago",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --extensions '.ts' --out-dir dist --copy-files",
+    "start": "node dist/index.js",
+    "test": "node index.js",
+    "dev": "nodemon --watch src --exec 'yarn run run' ",
+    "run": "yarn build && yarn start"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/chrome": "^0.0.126",
+    "nodemon": "^2.0.6"
+  }
 }

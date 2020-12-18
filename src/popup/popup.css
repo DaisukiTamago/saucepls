@@ -1,0 +1,46 @@
+body {
+    padding: 10px;
+    background-color: #D2C279;
+    display: flex;
+}
+
+#container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 8px;
+    transition: 0.3s;
+    border-bottom: 0.5px solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#container div:hover{
+    cursor: pointer;
+    background-color: #F1F1F1;
+    color: black;
+}
+
+#container div b {
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#container div b:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#container div button {
+    font-weight: bold;
+}
+
+#container div button:hover {
+    cursor: pointer;
+}
+
